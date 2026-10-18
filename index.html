@@ -137,7 +137,46 @@
             margin-top: 80px;
             color: #666;
         }
+.services {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 25px;
+    margin-top: 50px;
+}
 
+.service-card {
+    background: white;
+    padding: 30px;
+    border-radius: 25px;
+    box-shadow: 0 8px 25px rgba(0,0,0,0.06);
+    transition: transform 0.2s ease;
+}
+
+.service-card:hover {
+    transform: translateY(-5px);
+}
+
+.service-card h3 {
+    margin-top: 0;
+    margin-bottom: 20px;
+    font-size: 1.5rem;
+}
+
+.service-card ul {
+    margin-top: 15px;
+    padding-left: 20px;
+}
+
+.service-card li {
+    margin-bottom: 10px;
+}
+
+.price {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #c69c91;
+    margin-top: 20px;
+}
         @media (max-width: 768px) {
             h1 {
                 font-size: 2.8rem;
@@ -236,6 +275,91 @@
     <p style="text-align:center; max-width:700px; margin:40px auto;">
         MamaRust biedt ondersteuning op een manier die aansluit bij jouw gezin en jouw behoeften.
     </p>
+
+</section>
+
+<section>
+
+    <h2>Wat MamaRust voor je kan betekenen</h2>
+
+    <div class="services">
+
+        <div class="service-card">
+
+            <h3>🌿 MamaMoment</h3>
+
+            <p>
+                Een paar uur rust en ondersteuning aan huis.
+            </p>
+
+            <ul>
+                <li>Praktische hulp</li>
+                <li>Ondersteuning rondom de baby</li>
+                <li>Een luisterend oor</li>
+                <li>Ruimte om zelf even op adem te komen</li>
+            </ul>
+
+            <div class="price">€165</div>
+
+        </div>
+
+        <div class="service-card">
+
+            <h3>🤍 MamaRust Dagdeel</h3>
+
+            <p>
+                Extra tijd voor herstel en ontspanning.
+            </p>
+
+            <ul>
+                <li>Ondersteuning in huis</li>
+                <li>Hulp bij dagelijkse taken</li>
+                <li>Ruimte voor rust</li>
+                <li>Aandacht voor het hele gezin</li>
+            </ul>
+
+            <div class="price">€220</div>
+
+        </div>
+
+        <div class="service-card">
+
+            <h3>🌙 MamaSlaap Nachtservice</h3>
+
+            <p>
+                Een nacht waarin jij kunt slapen en herstellen.
+            </p>
+
+            <ul>
+                <li>Ondersteuning gedurende de nacht</li>
+                <li>Zorg afgestemd op jullie wensen</li>
+                <li>Meer rust voor ouders</li>
+            </ul>
+
+            <div class="price">€395 per nacht</div>
+
+        </div>
+
+        <div class="service-card">
+
+            <h3>🌸 Het Eerste 40 Dagen Pakket</h3>
+
+            <p>
+                Ondersteuning gedurende de eerste weken.
+            </p>
+
+            <ul>
+                <li>8 bezoeken van 4 uur</li>
+                <li>Persoonlijke begeleiding</li>
+                <li>Praktische ondersteuning</li>
+                <li>Rust en continuïteit</li>
+            </ul>
+
+            <div class="price">€1.595</div>
+
+        </div>
+
+    </div>
 
 </section>
 
