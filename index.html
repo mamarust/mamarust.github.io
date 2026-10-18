@@ -1,37 +1,196 @@
-<header>
-<h1>MamaRust</h1>
- 
-<p>
-Rust, herstel en ondersteuning voor jonge gezinnen
-</p>
-</header>
- 
-<section>
- 
-<h2>De eerste weken met een baby zijn bijzonder</h2>
- 
-<p>
-De eerste weken met een baby zijn bijzonder.
-Maar ze kunnen ook vermoeiend, onzeker en overweldigend zijn.
-</p>
- 
-<p>
-Tegelijkertijd staat de kraamzorg onder druk.
-Gezinnen krijgen regelmatig minder ondersteuning dan zij hadden verwacht en kraamverzorgenden hebben vaak minder tijd dan zij zelf zouden wensen.
-</p>
- 
-<p>
-MamaRust biedt aanvullende ondersteuning aan huis,
-zodat ouders meer ruimte krijgen voor rust,
-herstel en genieten van hun nieuwe gezin.
-</p>
- 
-<h3>Als de kraamzorg stopt, begint MamaRust.</h3>
- 
-<p>
-<a class="button" href="mailto:info@mamarust.nl">
-Kennismakingsgesprek aanvragen
-</a>
-</p>
- 
-</section>
+<!DOCTYPE html>
+<html lang="nl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>MamaRust | Rust, herstel en ondersteuning</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600;700&family=Open+Sans:wght@300;400;600&display=swap" rel="stylesheet">
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background: #faf8f6;
+            color: #4a4a4a;
+            font-family: 'Open Sans', sans-serif;
+            line-height: 1.8;
+        }
+
+        header {
+            background: linear-gradient(
+                180deg,
+                #ead7d0 0%,
+                #faf8f6 100%
+            );
+            text-align: center;
+            padding: 120px 20px;
+        }
+
+        h1 {
+            font-family: 'Playfair Display', serif;
+            font-size: 4rem;
+            color: #7b5b56;
+            margin-bottom: 20px;
+        }
+
+        .subtitle {
+            font-size: 1.4rem;
+            color: #6b6b6b;
+            max-width: 700px;
+            margin: auto;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: auto;
+            padding: 80px 25px;
+        }
+
+        h2 {
+            font-family: 'Playfair Display', serif;
+            color: #7b5b56;
+            text-align: center;
+            font-size: 2.4rem;
+            margin-bottom: 40px;
+        }
+
+        h3 {
+            font-family: 'Playfair Display', serif;
+            color: #7b5b56;
+            text-align: center;
+            font-size: 2rem;
+            margin-top: 50px;
+            margin-bottom: 20px;
+        }
+
+        p {
+            font-size: 1.15rem;
+            margin-bottom: 25px;
+        }
+
+        .intro {
+            text-align: center;
+        }
+
+        .button {
+            display: inline-block;
+            background: #c69c91;
+            color: white;
+            text-decoration: none;
+            padding: 15px 30px;
+            border-radius: 40px;
+            font-weight: 600;
+            margin-top: 20px;
+            transition: 0.3s;
+        }
+
+        .button:hover {
+            background: #b4887c;
+        }
+
+        .button-wrapper {
+            text-align: center;
+            margin-top: 40px;
+        }
+
+        .quote {
+            text-align: center;
+            font-family: 'Playfair Display', serif;
+            font-size: 2rem;
+            color: #7b5b56;
+            margin-top: 60px;
+        }
+
+        footer {
+            background: #f2ece8;
+            text-align: center;
+            padding: 40px 20px;
+            margin-top: 80px;
+            color: #666;
+        }
+
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 2.8rem;
+            }
+
+            h2 {
+                font-size: 2rem;
+            }
+
+            .subtitle {
+                font-size: 1.1rem;
+            }
+
+            .quote {
+                font-size: 1.6rem;
+            }
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <header>
+
+        <h1>MamaRust</h1>
+
+        <p class="subtitle">
+            Rust, herstel en ondersteuning voor jonge gezinnen
+        </p>
+
+    </header>
+
+    <main class="container">
+
+        <section class="intro">
+
+            <h2>De eerste weken met een baby zijn bijzonder</h2>
+
+            <p>
+                De eerste weken met een baby zijn bijzonder.
+                Maar ze kunnen ook vermoeiend, onzeker en overweldigend zijn.
+            </p>
+
+            <p>
+                Tegelijkertijd staat de kraamzorg onder druk.
+                Gezinnen krijgen regelmatig minder ondersteuning dan zij hadden verwacht
+                en kraamverzorgenden hebben vaak minder tijd dan zij zelf zouden wensen.
+            </p>
+
+            <p>
+                MamaRust biedt aanvullende ondersteuning aan huis,
+                zodat ouders meer ruimte krijgen voor rust,
+                herstel en genieten van hun nieuwe gezin.
+            </p>
+
+            <div class="quote">
+                Als de kraamzorg stopt,<br>
+                begint MamaRust.
+            </div>
+
+            <div class="button-wrapper">
+                <a href="mailto:info@mamarust.nl" class="button">
+              ragen
+                </a>
+            </div>
+
+        </section>
+
+    </main>
+
+    <footer>
+        © 2026 MamaRust
+    </footer>
+
+</body>
+
+</html>
