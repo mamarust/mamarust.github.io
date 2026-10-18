@@ -101,15 +101,22 @@
         }
 
         .values {
-            display: flex;
-            justify-content: center;
-            gap: 40px;
-            flex-wrap: wrap;
-            margin: 50px 0;
-            font-size: 1.3rem;
-            color: #7b5b56;
-            font-weight: 600;
-        }
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    margin: 50px 0;
+}
+
+.value-card {
+    background: #f4e7e2;
+    color: #7b5b56;
+    padding: 15px 25px;
+    border-radius: 30px;
+    font-weight: 600;
+    font-size: 1.1rem;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+}
 
         .hero-image {
             width: 100%;
@@ -204,10 +211,20 @@
         </div>
 
         <div class="values">
-            <div>🌿 Rust</div>
-            <div>🤍 Herstel</div>
-            <div>🌸 Ondersteuning</div>
-        </div>
+
+    <div class="value-card">
+        🌿 Rust
+    </div>
+
+    <div class="value-card">
+        🤍 Herstel
+    </div>
+
+    <div class="value-card">
+        🌸 Ondersteuning
+    </div>
+
+</div>
 
         <img src="Header.jpg" alt="MamaRust" class="hero-image">
 
