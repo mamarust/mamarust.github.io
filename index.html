@@ -24,120 +24,52 @@
         }
 
         header {
-border-bottom-left-radius: 40px;
-border-bottom-right-radius: 40px;
-    background: linear-gradient(
-        180deg,
-        #ead7d0 0%,
-        #faf8f6 100%
-    );
-    text-align: center;
-    padding: 40px 20px;
-}
+            background: linear-gradient(
+                180deg,
+                #ead7d0 0%,
+                #faf8f6 100%
+            );
+            text-align: center;
+            padding: 40px 20px;
+            border-bottom-left-radius: 40px;
+            border-bottom-right-radius: 40px;
+        }
 
-.hero-image {
-    width: 100%;
-    max-width: 800px;
-    height: 300px;
-    object-fit: cover;
-    border-radius: 30px;
-    display: block;
-    margin: 0 auto 30px auto;
-    box-shadow: 0 15px 40px rgba(0,0,0,0.12);
-}
-    object-fit: cover;
-    border-radius: 30px;
-    display: block;
-    margin: 0 auto 40px auto;
-    box-shadow: 0 15px 40px rgba(0,0,0,0.12);
-}
         h1 {
-    font-family: 'Playfair Display', serif;
-    font-size: 5rem;
+            font-family: 'Playfair Display', serif;
+            font-size: 5rem;
             color: #7b5b56;
-            margin-bottom: 20px;
+            margin-bottom: 15px;
         }
 
         .subtitle {
-            font-size: 1.4rem;
+            font-size: 1.6rem;
             color: #6b6b6b;
             max-width: 700px;
             margin: auto;
         }
 
         .container {
-            max-width: 900px;
+            max-width: 1000px;
             margin: auto;
-            padding: 80px 25px;
+            padding: 60px 30px;
         }
 
         h2 {
             font-family: 'Playfair Display', serif;
             color: #7b5b56;
             text-align: center;
-            font-size: 2.4rem;
+            font-size: 3rem;
             margin-bottom: 40px;
         }
 
-        h3 {
-            font-family: 'Playfair Display', serif;
-            color: #7b5b56;
-            text-align: center;
-            font-size: 2rem;
-            margin-top: 50px;
-            margin-bottom: 20px;
-        }
-
         p {
-            font-size: 1.15rem;
+            font-size: 1.2rem;
             margin-bottom: 25px;
         }
-.reasons {
-    max-width: 750px;
-    margin: 40px auto;
-    padding: 40px;
-    background: #f6efec;
-    border-radius: 25px;
-    list-style: none;
-}
 
-.reasons li {
-    margin-bottom: 18px;
-    padding-left: 35px;
-    position: relative;
-    font-size: 1.1rem;
-}
-
-.reasons li:before {
-    content: "♡";
-    color: #c69c91;
-    position: absolute;
-    left: 0;
-    font-size: 1.1rem;
-}
         .intro {
             text-align: center;
-        }
-
-        .button {
-            display: inline-block;
-            background: #c69c91;
-            color: white;
-            text-decoration: none;
-            padding: 15px 30px;
-            border-radius: 40px;
-            font-weight: 600;
-            margin-top: 20px;
-            transition: 0.3s;
-        }
-
-        .button:hover {
-            background: #b4887c;
-        }
-
-        .button-wrapper {
-            text-align: center;
-            margin-top: 40px;
         }
 
         .quote {
@@ -145,7 +77,49 @@ border-bottom-right-radius: 40px;
             font-family: 'Playfair Display', serif;
             font-size: 2rem;
             color: #7b5b56;
-            margin-top: 60px;
+            margin-top: 50px;
+        }
+
+        .button-wrapper {
+            text-align: center;
+            margin-top: 35px;
+        }
+
+        .button {
+            display: inline-block;
+            background: #c69c91;
+            color: white;
+            text-decoration: none;
+            padding: 16px 35px;
+            border-radius: 50px;
+            font-weight: 600;
+            transition: 0.3s ease;
+        }
+
+        .button:hover {
+            background: #b4887c;
+        }
+
+        .values {
+            display: flex;
+            justify-content: center;
+            gap: 40px;
+            flex-wrap: wrap;
+            margin: 50px 0;
+            font-size: 1.3rem;
+            color: #7b5b56;
+            font-weight: 600;
+        }
+
+        .hero-image {
+            width: 100%;
+            max-width: 800px;
+            height: 300px;
+            object-fit: cover;
+            border-radius: 30px;
+            display: block;
+            margin: 40px auto;
+            box-shadow: 0 15px 40px rgba(0,0,0,0.12);
         }
 
         footer {
@@ -155,49 +129,11 @@ border-bottom-right-radius: 40px;
             margin-top: 80px;
             color: #666;
         }
-.services {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 25px;
-    margin-top: 50px;
-}
 
-.service-card {
-    background: white;
-    padding: 30px;
-    border-radius: 25px;
-    box-shadow: 0 8px 25px rgba(0,0,0,0.06);
-    transition: transform 0.2s ease;
-}
-
-.service-card:hover {
-    transform: translateY(-5px);
-}
-
-.service-card h3 {
-    margin-top: 0;
-    margin-bottom: 20px;
-    font-size: 1.5rem;
-}
-
-.service-card ul {
-    margin-top: 15px;
-    padding-left: 20px;
-}
-
-.service-card li {
-    margin-bottom: 10px;
-}
-
-.price {
-    font-size: 1.5rem;
-    font-weight: bold;
-    color: #c69c91;
-    margin-top: 20px;
-}
         @media (max-width: 768px) {
+
             h1 {
-                font-size: 2.8rem;
+                font-size: 3rem;
             }
 
             h2 {
@@ -205,11 +141,16 @@ border-bottom-right-radius: 40px;
             }
 
             .subtitle {
-                font-size: 1.1rem;
+                font-size: 1.2rem;
             }
 
             .quote {
-                font-size: 1.6rem;
+                font-size: 1.5rem;
+            }
+
+            .values {
+                flex-direction: column;
+                gap: 15px;
             }
         }
     </style>
@@ -218,9 +159,7 @@ border-bottom-right-radius: 40px;
 
 <body>
 
-    <header>
-
-    <img src="Header.jpg" alt="MamaRust" class="hero-image">
+<header>
 
     <h1>MamaRust</h1>
 
@@ -230,157 +169,55 @@ border-bottom-right-radius: 40px;
 
 </header>
 
-    <main class="container">
+<main class="container">
 
-        <section class="intro">
+    <section class="intro">
 
-            <h2>De eerste weken met een baby zijn bijzonder</h2>
+        <h2>De eerste weken met een baby zijn bijzonder</h2>
 
-            <p>
-                De eerste weken met een baby zijn bijzonder.
-                Maar ze kunnen ook vermoeiend, onzeker en overweldigend zijn.
-            </p>
+        <p>
+            De eerste weken met een baby zijn bijzonder.
+            Maar ze kunnen ook vermoeiend, onzeker en overweldigend zijn.
+        </p>
 
-            <p>
-                Tegelijkertijd staat de kraamzorg onder druk.
-                Gezinnen krijgen regelmatig minder ondersteuning dan zij hadden verwacht
-                en kraamverzorgenden hebben vaak minder tijd dan zij zelf zouden wensen.
-            </p>
+        <p>
+            Tegelijkertijd staat de kraamzorg onder druk.
+            Gezinnen krijgen regelmatig minder ondersteuning dan zij hadden verwacht
+            en kraamverzorgenden hebben vaak minder tijd dan zij zelf zouden wensen.
+        </p>
 
-            <p>
-                MamaRust biedt aanvullende ondersteuning aan huis,
-                zodat ouders meer ruimte krijgen voor rust,
-                herstel en genieten van hun nieuwe gezin.
-            </p>
+        <p>
+            MamaRust biedt aanvullende ondersteuning aan huis,
+            zodat ouders meer ruimte krijgen voor rust,
+            herstel en genieten van hun nieuwe gezin.
+        </p>
 
-            <div class="quote">
-                Als de kraamzorg stopt,<br>
-                begint MamaRust.
-            </div>
-
-            <div class="button-wrapper">
-    <a href="mailto:info@mamarust.nl" class="button">
-        Kennismakingsgesprek aanvragen
-    </a>
-</div>
-
-        </section>
-
-    </main>
-
-    <footer>
-        © 2026 MamaRust
-    </footer>
-
-</body>
-
-</section>
-
-<section>
-
-    <h2>Je hoeft het niet alleen te doen</h2>
-
-    <p style="text-align:center;">
-        Misschien herken je dit:
-    </p>
-
-    <ul class="reasons">
-        <li>De kraamperiode loopt ten einde, maar je voelt je nog niet volledig hersteld.</li>
-        <li>Je hebt behoefte aan extra rust of praktische ondersteuning.</li>
-        <li>Familie woont niet in de buurt.</li>
-        <li>Je wilt tijd voor jezelf, terwijl er goed voor je baby wordt gezorgd.</li>
-        <li>Je zoekt een vertrouwd gezicht dat even met je meedenkt.</li>
-    </ul>
-
-    <p style="text-align:center; max-width:700px; margin:40px auto;">
-        MamaRust biedt ondersteuning op een manier die aansluit bij jouw gezin en jouw behoeften.
-    </p>
-
-</section>
-
-<section>
-
-    <h2>Wat MamaRust voor je kan betekenen</h2>
-
-    <div class="services">
-
-        <div class="service-card">
-
-            <h3>🌿 MamaMoment</h3>
-
-            <p>
-                Een paar uur rust en ondersteuning aan huis.
-            </p>
-
-            <ul>
-                <li>Praktische hulp</li>
-                <li>Ondersteuning rondom de baby</li>
-                <li>Een luisterend oor</li>
-                <li>Ruimte om zelf even op adem te komen</li>
-            </ul>
-
-            <div class="price">€165</div>
-
+        <div class="quote">
+            Als de kraamzorg stopt,<br>
+            begint MamaRust.
         </div>
 
-        <div class="service-card">
-
-            <h3>🤍 MamaRust Dagdeel</h3>
-
-            <p>
-                Extra tijd voor herstel en ontspanning.
-            </p>
-
-            <ul>
-                <li>Ondersteuning in huis</li>
-                <li>Hulp bij dagelijkse taken</li>
-                <li>Ruimte voor rust</li>
-                <li>Aandacht voor het hele gezin</li>
-            </ul>
-
-            <div class="price">€220</div>
-
+        <div class="button-wrapper">
+            <a href="mailto:estherhorlings@gmail.com" class="button">
+                Kennismakingsgesprek aanvragen
+            </a>
         </div>
 
-        <div class="service-card">
-
-            <h3>🌙 MamaSlaap Nachtservice</h3>
-
-            <p>
-                Een nacht waarin jij kunt slapen en herstellen.
-            </p>
-
-            <ul>
-                <li>Ondersteuning gedurende de nacht</li>
-                <li>Zorg afgestemd op jullie wensen</li>
-                <li>Meer rust voor ouders</li>
-            </ul>
-
-            <div class="price">€395 per nacht</div>
-
+        <div class="values">
+            <div>🌿 Rust</div>
+            <div>🤍 Herstel</div>
+            <div>🌸 Ondersteuning</div>
         </div>
 
-        <div class="service-card">
+        <img src="Header.jpg" alt="MamaRust" class="hero-image">
 
-            <h3>🌸 Het Eerste 40 Dagen Pakket</h3>
-
-            <p>
-                Ondersteuning gedurende de eerste weken.
-            </p>
-
-            <ul>
-                <li>8 bezoeken van 4 uur</li>
-                <li>Persoonlijke begeleiding</li>
-                <li>Praktische ondersteuning</li>
-                <li>Rust en continuïteit</li>
-            </ul>
-
-            <div class="price">€1.595</div>
-
-        </div>
-
-    </div>
-
-</section>
+    </section>
 
 </main>
+
+<footer>
+    © 2026 MamaRust
+</footer>
+
+</body>
+</html>
