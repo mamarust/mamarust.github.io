@@ -35,6 +35,16 @@ border-bottom-right-radius: 40px;
     padding: 70px 20px;
 }
 
+.hero-image {
+    width: 100%;
+    max-width: 1000px;
+    height: 450px;
+    object-fit: cover;
+    border-radius: 30px;
+    display: block;
+    margin: 0 auto 40px auto;
+    box-shadow: 0 15px 40px rgba(0,0,0,0.12);
+}
         h1 {
             font-family: 'Playfair Display', serif;
             font-size: 4rem;
@@ -204,13 +214,15 @@ border-bottom-right-radius: 40px;
 
     <header>
 
-        <h1>MamaRust</h1>
+    <img src="Header.jpg" alt="MamaRust" class="hero-image">
 
-        <p class="subtitle">
-            Rust, herstel en ondersteuning voor jonge gezinnen
-        </p>
+    <h1>MamaRust</h1>
 
-    </header>
+    <p class="subtitle">
+        Rust, herstel en ondersteuning voor jonge gezinnen
+    </p>
+
+</header>
 
     <main class="container">
 
