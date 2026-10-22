@@ -190,8 +190,9 @@
 }
 
 .service-card ul {
+    list-style: none;
+    padding-left: 0;
     margin-top: 15px;
-    padding-left: 20px;
 }
 
 .service-card li {
@@ -291,6 +292,10 @@
 
 .premium-card {
     border: 2px solid #d8b4a6;
+}
+
+.package-header {
+    min-height: 180px;
 }
         
 @media (max-width: 768px) {
@@ -433,11 +438,17 @@
 
         <div class="service-card">
 
+    <div class="package-header">
+
     <h3>🌿 MamaMoment</h3>
 
+    <p style="height:32px;"></p>
+
     <p class="package-hours">
-    3 uur ondersteuning aan huis
-</p>
+        3 uur ondersteuning aan huis
+    </p>
+
+</div>
 
     <p>
         Voor wanneer je even wilt uitrusten, herstellen
@@ -456,23 +467,27 @@
 
 <div class="service-card premium-card">
  
-    <h3 style="margin-bottom:10px;">🤍 MamaRust Dagdeel</h3>
+<div class="package-header">
 
-<p style="
-display:inline-block;
-background:#f4e7e2;
-padding:4px 12px;
-border-radius:20px;
-font-size:0.8rem;
-font-weight:600;
-margin-bottom:20px;
-color:#7b5b56;">
-⭐ Meest gekozen
-</p>
-    
-        <p class="package-hours">
-    5 uur ondersteuning aan huis
-</p>
+    <h3>🤍 MamaRust Dagdeel</h3>
+
+    <p style="
+    display:inline-block;
+    background:#f4e7e2;
+    padding:4px 12px;
+    border-radius:20px;
+    font-size:0.8rem;
+    font-weight:600;
+    margin-bottom:20px;
+    color:#7b5b56;">
+    ⭐ Meest gekozen
+    </p>
+
+    <p class="package-hours">
+        5 uur ondersteuning aan huis
+    </p>
+
+</div>
 
     <p>
         Voor moeders die behoefte hebben aan een volledig
@@ -491,23 +506,27 @@ color:#7b5b56;">
 
 <div class="service-card">
     
-    <h3 style="margin-bottom:10px;">🌸 MamaRust Traject</h3>
+<div class="package-header">
 
-<p style="
-display:inline-block;
-background:#f4e7e2;
-padding:4px 12px;
-border-radius:20px;
-font-size:0.8rem;
-font-weight:600;
-margin-bottom:20px;
-color:#7b5b56;">
-⭐ Meest voordelige keuze per uur
-</p>
-    
-        <p class="package-hours">
-    8 bezoeken van 4 uur (32 uur ondersteuning)
-</p>
+    <h3>🌸 MamaRust Traject</h3>
+
+    <p style="
+    display:inline-block;
+    background:#f4e7e2;
+    padding:4px 12px;
+    border-radius:20px;
+    font-size:0.8rem;
+    font-weight:600;
+    margin-bottom:20px;
+    color:#7b5b56;">
+    ⭐ Voordeligste keuze per uur
+    </p>
+
+    <p class="package-hours">
+        8 bezoeken van 4 uur (32 uur ondersteuning)
+    </p>
+
+</div>
 
     <p>
         Voor gezinnen die ook na de kraamweek behoefte hebben
