@@ -351,21 +351,53 @@
     margin-bottom: 25px;
 }
 
-        .faq-item {
+    faq-item {
     background: white;
-    padding: 25px;
+    padding: 30px;
     border-radius: 20px;
-    margin-bottom: 20px;
-    box-shadow: 0 5px 15px rgba(0,0,0,0.04);
+    margin-bottom: 25px;
+    border: 1px solid #ead7d0;
 }
 
 .faq-item h3 {
     color: #7b5b56;
+    font-size: 1.25rem;
+    font-weight: 600;
     margin-bottom: 15px;
 }
 
 .faq-item p:last-child {
     margin-bottom: 0;
+}
+  .faq-item p {
+    font-size: 1.05rem;
+    line-height: 1.8;
+}
+
+        .faq-item summary {
+    cursor: pointer;
+    padding: 25px 30px;
+    font-weight: 600;
+    color: #7b5b56;
+    list-style: none;
+}
+
+.faq-item summary::-webkit-details-marker {
+    display: none;
+}
+
+.faq-item summary::after {
+    content: "+";
+    float: right;
+    font-size: 1.4rem;
+}
+
+.faq-item[open] summary::after {
+    content: "−";
+}
+
+.faq-content {
+    padding: 0 30px 25px 30px;
 }
         
 @media (max-width: 768px) {
@@ -746,7 +778,7 @@ placeholder
 
     <div class="faq-item">
 
-    <h3>Is MamaRust een vervanging van kraamzorg?</h3>
+    <h3>🌿 Is MamaRust een vervanging van kraamzorg?</h3>
 
     <p>Nee. MamaRust biedt geen medische zorg en vervangt geen kraamzorg, verloskundige zorg of huisartsenzorg.</p>
 
@@ -756,25 +788,29 @@ placeholder
 
     <div class="faq-item">
 
-    <h3>Wanneer kan ik gebruikmaken van MamaRust?</h3>
+    <h3>🌿 Wanneer kan ik gebruikmaken van MamaRust?</h3>
 
     <p>MamaRust is er vooral voor de periode na de kraamzorg, maar ondersteuning tijdens de kraamperiode of later in het eerste jaar van je baby is in overleg ook mogelijk.</p>
 
 </div>
 
-    <div class="faq-item">
+   <details class="faq-item">
 
-    <h3>Hoeveel uur ondersteuning kan ik afnemen?</h3>
+    <summary>🌿 Hoeveel uur ondersteuning kan ik afnemen?</summary>
 
-    <p>Je kunt kiezen uit een van de pakketten of samen kijken naar een oplossing die past bij jullie gezin en behoeften.</p>
+    <div class="faq-content">
 
-    <p>Tijdens een vrijblijvend kennismakingsgesprek bespreken we jullie situatie en kijken we welke vorm van ondersteuning het beste aansluit.</p>
+        <p>Je kunt kiezen uit een van de pakketten of samen kijken naar een oplossing die past bij jullie gezin en behoeften.</p>
 
-</div>
+        <p>Tijdens een vrijblijvend kennismakingsgesprek bespreken we jullie situatie en kijken we welke vorm van ondersteuning het beste aansluit.</p>
+
+    </div>
+
+</details>
 
     <div class="faq-item">
         
-    <h3>Wat als ik alleen af en toe hulp nodig heb?</h3>
+    <h3>🌿 Wat als ik alleen af en toe hulp nodig heb?</h3>
 
 <p>Dat is geen probleem. Ook een eenmalig bezoek of een beperkt aantal uren ondersteuning is mogelijk. Samen kijken we wat het beste bij jullie past.</p>
 
@@ -782,7 +818,7 @@ placeholder
 
     <div class="faq-item">
         
-    <h3>Kan ik eerst kennismaken?</h3>
+    <h3>🌿 Kan ik eerst kennismaken?</h3>
 
 <p>Ja. Een vrijblijvend kennismakingsgesprek is altijd mogelijk. Samen bespreken we jullie situatie en kijken we welke vorm van ondersteuning het beste aansluit bij jullie wensen en behoeften.</p>
 
@@ -790,23 +826,15 @@ placeholder
 
     <div class="faq-item">
         
-    <h3>Wordt MamaRust vergoed door de zorgverzekering?</h3>
+    <h3>🌿 Wordt MamaRust vergoed door de zorgverzekering?</h3>
 
 <p>MamaRust biedt particuliere aanvullende ondersteuning en wordt doorgaans niet vergoed vanuit de basisverzekering. Informeer bij je zorgverzekeraar naar eventuele aanvullende mogelijkheden.</p>
 
          </div>
-
+    
     <div class="faq-item">
         
-    <h3>Ik heb minder kraamzorg ontvangen dan tijdens de intake was geïndiceerd. Wat kan ik doen?</h3>
-
-    <p>Neem hierover contact op met je kraamzorgorganisatie of zorgverzekeraar. Zij kunnen je informeren over jouw situatie, de geïndiceerde uren en eventuele mogelijkheden wanneer minder zorg is geleverd dan was afgesproken.</p>
-
-         </div>
-
-    <div class="faq-item">
-        
-    <h3>Wat zijn de annuleringsvoorwaarden?</h3>
+    <h3>🌿 Wat zijn de annuleringsvoorwaarden?</h3>
 
 <p>Afspraken kunnen kosteloos worden geannuleerd of verplaatst tot 24 uur van tevoren.</p>
 
@@ -815,6 +843,14 @@ placeholder
 <p>Bij overmacht zoeken we altijd samen naar een passende oplossing.</p>
 
         </div>
+    
+    <div class="faq-item">
+        
+    <h3>🌿 Ik heb minder kraamzorg ontvangen dan verwacht. Wat kan ik doen?</h3>
+
+    <p>Neem hiervoor contact op met je kraamzorgorganisatie of zorgverzekeraar. Zij kunnen je informeren over jouw situatie, de geïndiceerde uren en eventuele mogelijkheden wanneer minder zorg is geleverd dan was afgesproken.</p>
+
+         </div>
     
 </section>
     
