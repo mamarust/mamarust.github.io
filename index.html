@@ -338,19 +338,12 @@
     margin-bottom: 25px;
 }
 
-    faq-item {
+    .faq-item {
     background: white;
     padding: 30px;
     border-radius: 20px;
     margin-bottom: 25px;
     border: 1px solid #ead7d0;
-}
-
-.faq-item h3 {
-    color: #7b5b56;
-    font-size: 1.25rem;
-    font-weight: 600;
-    margin-bottom: 15px;
 }
 
 .faq-item p:last-child {
@@ -361,13 +354,17 @@
     line-height: 1.8;
 }
 
-    .faq-item summary {
+   .faq-item summary {
     cursor: pointer;
     padding: 25px 30px;
     font-size: 1.25rem;
     font-weight: 600;
     color: #7b5b56;
     list-style: none;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .faq-item summary::-webkit-details-marker {
@@ -376,7 +373,6 @@
 
 .faq-item summary::after {
     content: "›";
-    float: right;
     font-size: 2rem;
     color: #c69c91;
     transition: transform 0.3s ease;
@@ -388,6 +384,18 @@
 
 .faq-content {
     padding: 0 30px 25px 30px;
+}
+
+        .faq-item[open] {
+    background: #fcf8f6;
+}
+
+        .faq-item summary:hover {
+    background: #faf5f3;
+}
+
+        #faq {
+    margin-top: 90px;
 }
         
 @media (max-width: 768px) {
@@ -870,12 +878,6 @@ placeholder
     <p style="text-align:center;">
         MamaRust ondersteunt jonge gezinnen in Drenthe en Groningen.
     </p>
-
-    <hr style="
-        border:0;
-        border-top:1px solid #e6d7d1;
-        margin:30px 0;
-    ">
 
     <p><strong>Woon je in de regio Assen, Emmen of Stadskanaal?</strong><br>
         Dan kom ik graag bij je thuis.
