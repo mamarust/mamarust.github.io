@@ -250,24 +250,6 @@
     margin-bottom: 40px;
 }      
 
-.info-box {
-    max-width: 850px;
-    margin: 60px auto 0 auto;
-    padding: 40px;
-    background: #f6efec;
-    border-radius: 25px;
-    border-left: 6px solid #d8b4a6;
-    text-align: left;
-}
-
-.info-box h2 {
-    margin-bottom: 20px;
-}
-
-.info-box p:last-child {
-    margin-bottom: 0;
-}
-
 .contact-section {
     margin-top: 60px;
     padding: 80px 40px;
@@ -388,13 +370,15 @@
 }
 
 .faq-item summary::after {
-    content: "+";
+    content: "›";
     float: right;
-    font-size: 1.4rem;
+    font-size: 2rem;
+    color: #c69c91;
+    transition: transform 0.3s ease;
 }
 
 .faq-item[open] summary::after {
-    content: "−";
+    transform: rotate(90deg);
 }
 
 .faq-content {
@@ -746,8 +730,6 @@ placeholder
         
         </section>
 
-<section class="info-box">
-
     <h2>Veelgestelde vragen</h2>
 
    <details class="faq-item">
@@ -878,7 +860,7 @@ placeholder
     
 <section class="info-box work-area">
 
-    <h2>Werkgebied</h2>
+    <h2>Waar is MamaRust beschikbaar?</h2>
 
     <p style="text-align:center;">
         MamaRust ondersteunt jonge gezinnen in Drenthe en Groningen.
@@ -890,11 +872,7 @@ placeholder
         margin:30px 0;
     ">
 
-    <p>
-        📍 Woon je in de driehoek Assen, Emmen en Stadskanaal?
-        </p>
-
-<p>
+    <p><strong>Woon je in de regio Assen, Emmen of Stadskanaal?</strong><br>
         Dan kom ik graag bij je thuis.
     </p>
 
